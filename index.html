@@ -14,15 +14,17 @@
     <title>Almighti Production</title>
   </head>
   <body>
+    <!--Navbar-->
     <nav id="navbar">
       <img src="img/logo.png" alt="Almighti Production" />
       <ul>
         <li><a href="#about">Личность</a></li>
         <li><a href="#music">Музыка</a></li>
         <li><a href="#contacts">Контакты</a></li>
-        <li><a href="#contacts"><i class="fa-solid fa-cart-shopping"></i> </a></li>
+        <li><a href="#contacts">Корзина</a></li>
       </ul>
     </nav>
+    <!--About-->
     <div class="container">
       <section id="about">
         <div>
@@ -41,14 +43,19 @@
         </article>
       </section>
     </div>
+    <!--Music-->
     <h2 class="title">Музыка</h2>
     <div class="container">
       <section id="music">
         <div class="music-container">
           <div class="music-info">
+            <div class="music-price">
+              2.5 <i class="fa-solid fa-sm fa-dollar-sign"></i>
+            </div>
             <div class="img-container">
               <img src="img/1.png" alt="music-cover" class="music-cover" />
             </div>
+            <p class="duration"></p>
             <div class="progress">
               <progress max="100" value="0"></progress>
             </div>
@@ -56,98 +63,86 @@
           </div>
           <audio src="music/1.mp3" class="music"></audio>
           <div class="navigation">
-            <button class="music-play action-btn">
+            <button class="music-play">
               <i class="fas fa-play"></i>
             </button>
-          </div>
-        </div>
-        <div class="music-container">
-          <div class="music-info">
-            <div class="img-container">
-              <img src="img/2.jpg" alt="music-cover" class="music-cover" />
-            </div>
-            <div class="progress">
-              <progress max="100" value="0"></progress>
-            </div>
-            <h4 class="music-title">In Today Already Walks Tomorrow</h4>
-          </div>
-          <audio src="music/2.mp3" class="music"></audio>
-          <div class="navigation">
-            <button class="music-play action-btn">
-              <i class="fas fa-play"></i>
-            </button>
-          </div>
-        </div>
-        <div class="music-container">
-          <div class="music-info">
-            <div class="img-container">
-              <img src="img/2.jpg" alt="music-cover" class="music-cover" />
-            </div>
-            <div class="progress">
-              <progress max="100" value="0"></progress>
-            </div>
-            <h4 class="music-title">In Today Already Walks Tomorrow</h4>
-          </div>
-          <audio src="music/2.mp3" class="music"></audio>
-          <div class="navigation">
-            <button class="music-play action-btn">
-              <i class="fas fa-play"></i>
-            </button>
-          </div>
-        </div>
-        <div class="music-container">
-          <div class="music-info">
-            <div class="img-container">
-              <img src="img/2.jpg" alt="music-cover" class="music-cover" />
-            </div>
-            <div class="progress">
-              <progress max="100" value="0"></progress>
-            </div>
-            <h4 class="music-title">In Today Already Walks Tomorrow</h4>
-          </div>
-          <audio src="music/2.mp3" class="music"></audio>
-          <div class="navigation">
-            <button class="music-play action-btn">
-              <i class="fas fa-play"></i>
-            </button>
-          </div>
-        </div>
-        <div class="music-container">
-          <div class="music-info">
-            <div class="img-container">
-              <img src="img/2.jpg" alt="music-cover" class="music-cover" />
-            </div>
-            <div class="progress">
-              <progress max="100" value="0"></progress>
-            </div>
-            <h4 class="music-title">In Today Already Walks Tomorrow</h4>
-          </div>
-          <audio src="music/2.mp3" class="music"></audio>
-          <div class="navigation">
-            <button class="music-play action-btn">
-              <i class="fas fa-play"></i>
-            </button>
-          </div>
-        </div>
-        <div class="music-container">
-          <div class="music-info">
-            <div class="img-container">
-              <img src="img/2.jpg" alt="music-cover" class="music-cover" />
-            </div>
-            <div class="progress">
-              <progress max="100" value="0"></progress>
-            </div>
-            <h4 class="music-title">In Today Already Walks Tomorrow</h4>
-          </div>
-          <audio src="music/2.mp3" class="music"></audio>
-          <div class="navigation">
-            <button class="music-play action-btn">
-              <i class="fas fa-play"></i>
+            <button class="music-buy">
+              <i class="fa-solid fa-cart-shopping"></i>
             </button>
           </div>
         </div>
       </section>
+      <div class="pagination">
+        <a href="#">&laquo;</a>
+        <a href="#">1</a>
+        <a href="#" class="active">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">6</a>
+        <a href="#">&raquo;</a>
+      </div>
     </div>
+    <!-- Contacts -->
+    <h2 class="title">Contacts</h2>
+    <div class="container">
+      <div id="contacts">
+        <ul>
+          <li>
+            <i class="fa-brands fa-telegram"></i>
+            <a href="https://t.me/landayvolk">Telegram</a>
+          </li>
+          <li>
+            <i class="fa-brands fa-square-whatsapp"></i>
+            <a
+              href="https://api.whatsapp.com/send?phone=79233714100&text=I'm%20a%20software%20developer"
+              >WhatsUp</a
+            >
+          </li>
+          <li>
+            <i class="fa-brands fa-vk"></i>
+            <a href="https://vk.com/volkssss">Vkontakte</a>
+          </li>
+        </ul>
+        <form>
+          <div class="form-group">
+            <label for="first-name">First name</label>
+            <input
+              placeholder="Name"
+              name="first-name"
+              id="first-name"
+              type="text"
+            />
+          </div>
+          <div class="form-group">
+            <label for="second-name">Second name</label>
+            <input
+              placeholder="Surname"
+              name="second-name"
+              id="second-name"
+              type="text"
+            />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input placeholder="Email" name="email" id="email" type="email" />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea
+              name="message"
+              id="message"
+              placeholder="Message"
+            ></textarea>
+          </div>
+          <div class="form-group">
+            <input type="submit" value="Send" />
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer>Copyright 2023</footer>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
       integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="

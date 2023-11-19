@@ -48,7 +48,14 @@ li {
   text-align: center;
 }
 
-.music-container .music-info .music-title{
+.music-container .music-price {
+  padding-top: 5px;
+  font-size: 18px;
+  background: #a7a7a7;
+  color: #000000;
+}
+
+.music-container .music-info .music-title {
   margin: 5px;
 }
 
@@ -82,13 +89,29 @@ li {
   animation-play-state: running;
 }
 
-.music-container .music-play {
+.music-container .navigation {
+  display: flex;
+}
+
+.music-container .navigation button {
   width: 100%;
   padding: 5px;
   background: #a7a7a7;
-  border-radius: 0px 0px 20px 20px;
   outline: none;
   border: none;
+}
+
+.music-container .navigation button:hover {
+  cursor: pointer;
+}
+
+.music-container .navigation button:nth-child(1) {
+  border-radius: 0px 0px 0px 20px;
+  border-right: 2px solid #000;
+}
+
+.music-container .navigation button:nth-child(2) {
+  border-radius: 0px 0px 20px 0px;
 }
 
 .music-container .music-play:hover {
@@ -148,7 +171,7 @@ progress[value]::-webkit-progress-value {
   background: #1f1f1f;
   padding: 10px;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr 2fr;
   align-items: center;
   border-bottom: 3px solid #ffffff;
 }
@@ -210,6 +233,92 @@ progress[value]::-webkit-progress-value {
   justify-content: center;
 }
 
+/* Contacts */
+#contacts {
+  display: flex;
+}
+
+#contacts ul {
+  flex: 1;
+  text-align: center;
+  align-self: center;
+}
+
+#contacts ul li {
+  font-size: 26px;
+  padding: 10px;
+}
+
+#contacts ul li a {
+  color: #a7a7a7;
+  text-decoration: none;
+  font-size: 22px;
+}
+
+#contacts form {
+  flex: 2;
+}
+
+#contacts .form-group  {
+  margin: 10px auto;
+  font-size: 22px;
+}
+
+#contacts .form-group input {
+  display: block;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  padding: 5px;
+  width: 100%;
+  font-size: 18px;
+  background: #a7a7a7;
+}
+
+#contacts .form-group input[type=submit] {
+  font-size: 22px;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 15px auto;
+  background: #b8b8b8;
+}
+
+#contacts .form-group input[type=submit]:hover {
+  cursor: pointer;
+  background: #474747;
+  color: white;
+}
+
+#contacts .form-group textarea {
+  background: #a7a7a7;
+  border: none;
+  outline: none;
+  display: block;
+  width: 100%;
+  font-size: 18px;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.pagination {
+  display: inline-block;
+}
+
+.pagination a {
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.pagination a.active {
+  background-color: #757575;
+  color: white;
+  border-radius: 5px;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
+
 @media screen and (max-width: 1180px) {
   #about article {
     font-size: x-large;
@@ -224,6 +333,7 @@ progress[value]::-webkit-progress-value {
   #navbar ul li {
     margin: 10px auto;
     padding: 4px;
+    font-size: 20px;
   }
   #about {
     grid-template-columns: 1fr;
